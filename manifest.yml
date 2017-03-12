@@ -7,7 +7,7 @@ applications:
 - name: conversation-simple
   command: npm start
   path: .
-  memory: 256M
+  memory: 512M
   instances: 1
   services:
   - my-conversation-service

@@ -4,7 +4,7 @@ declared-services:
     plan: free
 applications:
 - services:
-   - conversation-tutorial-services
+   - conversation-tutorial-service
   name: conversation-tutorial
   command: npm start
   path: .

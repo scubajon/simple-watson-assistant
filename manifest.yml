@@ -1,15 +1,11 @@
----
 declared-services:
-  conversation-tutorial:
+  conversation-service:
     label: conversation
     plan: free
 applications:
-- name: conversation-tutorial
+- services:
+   - conversation-tutorial
+  name: conversation-tutorial
   command: npm start
   path: .
   memory: 512M
-  instances: 1
-  services:
-  - conversation-tutorial
-  env:
-    NPM_CONFIG_PRODUCTION: false

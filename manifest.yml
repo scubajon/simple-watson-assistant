@@ -5,7 +5,10 @@ declared-services:
 applications:
 - services:
    - conversation-tutorial-service
-  name: conversation-tutorial
+  instances: 1
+  domain: mybluemix.net
+  name: my-conversation-tutorial
+  host: my-conversation-tutorial
   command: npm start
   path: .
   memory: 512M

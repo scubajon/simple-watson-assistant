@@ -4,7 +4,7 @@ declared-services:
     plan: free
 applications:
 - services:
-   - Watson Assistant - Cox-GBS
+   - Watson Assistant - Cox-GBS Test
   instances: 1
   domain: mybluemix.net
   name: cox-va

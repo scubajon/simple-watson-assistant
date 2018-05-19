@@ -40,5 +40,17 @@
   <script src="js/conversation.js"></script>
   <script src="js/payload.js"></script>
   <script src="js/global.js"></script>
+  <script>
+    function yesBye() {
+        var latestResponse = Api.getResponsePayload();
+        var context = latestResponse.context;
+        Api.sendRequest("yes", context);
+    }
+    function noBye() {
+        var latestResponse = Api.getResponsePayload();
+        var context = latestResponse.context;
+        Api.sendRequest("no", context);
+    }
+  </script>
 </body>
 </html>
